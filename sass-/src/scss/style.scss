@@ -1,0 +1,212 @@
+@import 'reset';
+@import 'mixin';
+@import 'variables';
+@import 'utilities';
+@import 'components';
+
+
+
+//HEADER
+.cafe_header{
+    overflow: hidden;
+    width:100%;
+    height:450px;
+    background-image: url("../img/Header.jpg");
+    //clip-path:polygon(0 0,100% 0,100% 80%,8% 100%)
+  
+}
+
+.overlay{
+    @include flexCenter;
+    flex-wrap: wrap;
+    width:100%;
+    height:100%;
+    background-color:rgba($color: #000000, $alpha: 0.5);
+}
+
+.valign_wrapper{
+    text-align:center;
+}
+
+.site_heading{
+    font-family: "Merienda One";
+    color:$light-color;
+    font-size:10rem;
+    font-weight:bold;
+}
+
+.site_subheading{
+    font-size:2rem;
+    color:$light-color;
+    letter-spacing: 0.6rem;
+}
+
+.navbar {
+    @include flexCenter;
+    width:100%;
+    margin-bottom:auto;
+    background-color: rgba($color: #fefefe, $alpha: 0.8);
+    ul{
+        list-style-type: none;
+        display: flex;
+        a{
+            display:block;
+            text-decoration:none;
+            color:$gray-color;
+            padding:1.9rem;
+
+            &.active{
+                color:$primary-color;
+            }
+        }
+    }
+}
+.rounded{
+    border-radius: 4rem;
+}
+
+figure{
+    position: relative;
+    margin-bottom:5rem;
+    height:25rem;
+    height:25rem;
+    background-color: rgb(145, 142, 142);
+    img{
+        width:100%;
+        height:100%;
+        box-shadow:0px 0px 10px 2px rgba($color: #000000, $alpha: 0.2)
+    }
+    .back{
+        margin-bottom:5rem;
+        position: absolute;
+        top:3rem;
+        left:-3rem;
+        width:100%;
+        height:100%;
+        background-color: rgba($color: #000000, $alpha: 0.1)
+      
+    }
+}
+
+
+
+.cafe_about{
+    padding:8rem 0;
+}
+.cafe_menu{
+    padding:8rem 0;
+}
+.cafe_footer{
+    padding:10rem 0;
+    background-color:#222;
+    color:$light-color;
+   
+}
+
+
+
+.cafe_offer{
+    width:100%;
+    height:50rem;
+    background-image: url("../img/offer.jpg");
+    color:$light-color;
+
+    &_heading{
+        font-weight: 600;
+        font-size:6rem;
+        text-transform: uppercase;
+    }
+
+    &_subheading{
+        font-weight: 300;
+        letter-spacing: 0.5rem;
+    }
+}
+
+.offer-btn{
+    display: inline-block;
+    text-decoration:none;
+    color:$primary-color;
+    background-color:$light-color;
+    padding:1rem 2.5rem;
+    margin-top:1.5rem;
+    border-radius:2.5rem;
+    transition: 0.4s all;
+
+    &:hover{
+        background-color:  $primary-color;
+        color:$light-color;
+    }
+}
+
+.menu{
+    list-style-type:none;
+
+    &_item{
+        display:flex;
+        justify-content: space-between;
+        color:$gray-color;
+        line-height: 5rem;
+    }
+    &_menu_price{
+        color:$primary-color;
+    }
+}
+
+
+.cafe_testimonial{
+    width:100%;
+    height:60rem;
+    background-image: url("../img/p.jpg");
+    background-repeat: no-repeat;
+
+}
+
+.testimonials{
+    width:50rem;
+    background-color: $boxshadow;
+    padding:7rem 3rem;
+    border-radius: 0.4rem;
+    box-shadow: $boxshadow;
+
+    &_text{
+        color:$light-color;
+        line-height: 4rem;
+    }
+}
+
+.brand{
+    font-family:$secondary-font;
+}
+
+.social-icons{
+    list-style-type: none;
+    display:flex;
+
+    li{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:5rem;
+        height:5rem;
+        background-color: $primary-color;
+        margin-top:0.1rem;
+        margin-right:2rem;
+        border-radius: 50%;
+        transition:0.5s all;
+
+        &:hover{
+            background-color:$light-color ;
+            color:$primary-color;
+        }
+    }
+}
+
+.list-inline{
+    list-style-type: none;
+    display:flex;
+     
+    li{
+        margin-right:2rem;
+    }
+}

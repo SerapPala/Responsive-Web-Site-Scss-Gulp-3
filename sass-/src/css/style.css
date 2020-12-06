@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
+
+/** MIXIN **/
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif; }
+
+.mb_auto {
+  margin-bottom: auto; }
+
+.text-center {
+  text-align: center; }
+
+.color-primary {
+  color: #f90; }
+
+.color-secondary {
+  color: #555; }
+
+.color-white {
+  color: #f9f9f9; }
+
+.line-space {
+  line-height: 3rem; }
+
+.margin-top {
+  margin-top: 0.3rem; }
+
+.margin-bottom {
+  margin-bottom: 0.1rem; }
+
+.margin-both {
+  margin: 3rem 0; }
+
+h5 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #f90;
+  margin-top: 3rem; }
+
+h4 {
+  font-family: "Merienda", sans-serif;
+  color: #090909;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+h3 {
+  font-family: "Merienda", sans-serif;
+  color: #090909;
+  font-weight: 400;
+  font-size: 3rem;
+  text-transform: uppercase; }
+
+h2 {
+  margin-bottom: 6rem;
+  font-family: "Merienda", sans-serif;
+  text-transform: uppercase;
+  font-size: 4rem; }
+
+.cafe_header {
+  overflow: hidden;
+  width: 100%;
+  height: 450px;
+  background-image: url("../img/Header.jpg"); }
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.valign_wrapper {
+  text-align: center; }
+
+.site_heading {
+  font-family: "Merienda One";
+  color: #f9f9f9;
+  font-size: 10rem;
+  font-weight: bold; }
+
+.site_subheading {
+  font-size: 2rem;
+  color: #f9f9f9;
+  letter-spacing: 0.6rem; }
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: auto;
+  background-color: rgba(254, 254, 254, 0.8); }
+  .navbar ul {
+    list-style-type: none;
+    display: flex; }
+    .navbar ul a {
+      display: block;
+      text-decoration: none;
+      color: #333;
+      padding: 1.9rem; }
+      .navbar ul a.active {
+        color: #f90; }
+
+.rounded {
+  border-radius: 4rem; }
+
+figure {
+  position: relative;
+  margin-bottom: 5rem;
+  height: 25rem;
+  height: 25rem;
+  background-color: #918e8e; }
+  figure img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2); }
+  figure .back {
+    margin-bottom: 5rem;
+    position: absolute;
+    top: 3rem;
+    left: -3rem;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); }
+
+.cafe_about {
+  padding: 8rem 0; }
+
+.cafe_menu {
+  padding: 8rem 0; }
+
+.cafe_footer {
+  padding: 10rem 0;
+  background-color: #222;
+  color: #f9f9f9; }
+
+.cafe_offer {
+  width: 100%;
+  height: 50rem;
+  background-image: url("../img/offer.jpg");
+  color: #f9f9f9; }
+  .cafe_offer_heading {
+    font-weight: 600;
+    font-size: 6rem;
+    text-transform: uppercase; }
+  .cafe_offer_subheading {
+    font-weight: 300;
+    letter-spacing: 0.5rem; }
+
+.offer-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #f90;
+  background-color: #f9f9f9;
+  padding: 1rem 2.5rem;
+  margin-top: 1.5rem;
+  border-radius: 2.5rem;
+  transition: 0.4s all; }
+  .offer-btn:hover {
+    background-color: #f90;
+    color: #f9f9f9; }
+
+.menu {
+  list-style-type: none; }
+  .menu_item {
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+    line-height: 5rem; }
+  .menu_menu_price {
+    color: #f90; }
+
+.cafe_testimonial {
+  width: 100%;
+  height: 60rem;
+  background-image: url("../img/p.jpg");
+  background-repeat: no-repeat; }
+
+.testimonials {
+  width: 50rem;
+  background-color: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+  padding: 7rem 3rem;
+  border-radius: 0.4rem;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3); }
+  .testimonials_text {
+    color: #f9f9f9;
+    line-height: 4rem; }
+
+.brand {
+  font-family: "Merienda", sans-serif; }
+
+.social-icons {
+  list-style-type: none;
+  display: flex; }
+  .social-icons li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background-color: #f90;
+    margin-top: 0.1rem;
+    margin-right: 2rem;
+    border-radius: 50%;
+    transition: 0.5s all; }
+    .social-icons li:hover {
+      background-color: #f9f9f9;
+      color: #f90; }
+
+.list-inline {
+  list-style-type: none;
+  display: flex; }
+  .list-inline li {
+    margin-right: 2rem; }
